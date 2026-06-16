@@ -253,6 +253,22 @@ body {
     font-size: 1.1rem;
 }
 
+.subsection-title {
+    font-size: 1.35rem;
+    font-weight: 700;
+    color: var(--text-main);
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    padding-bottom: 0.5rem;
+}
+
+.subsection-title i {
+    color: var(--accent-purple);
+}
+
 /* --- Glass Panels & Cards --- */
 .glass-panel {
     background: rgba(22, 27, 34, 0.6);
