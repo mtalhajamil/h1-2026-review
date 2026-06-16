@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muhammad Talha Jamil - H1 2026 Performance Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Google Fonts for modern developer feel -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;700&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="dark-theme">
+    <!-- Background grid/glow elements -->
+    <div class="glow-bg"></div>
+    <div class="grid-bg"></div>
+
+    <!-- Sidebar Navigation -->
+    <nav class="sidebar">
+        <div class="sidebar-header">
+            <div class="avatar">MT</div>
+            <div class="profile-info">
+                <h3>M. Talha Jamil</h3>
+                <span class="role-badge">Senior Software Engineer (IC3)</span>
+            </div>
+        </div>
+        <ul class="nav-links">
+            <li class="active"><a href="#summary"><i class="fa-solid fa-rocket"></i> Executive Summary</a></li>
+            <li><a href="#principles"><i class="fa-solid fa-brain"></i> Leadership Principles</a></li>
+            <li><a href="#debugging"><i class="fa-solid fa-bug-slash"></i> Critical Debugging</a></li>
+            <li><a href="#migrations"><i class="fa-solid fa-network-wired"></i> Architecture & Migrations</a></li>
+            <li><a href="#observability"><i class="fa-solid fa-chart-line"></i> Observability & On-Call</a></li>
+            <li><a href="#ai-adoption"><i class="fa-solid fa-robot"></i> AI Enablement</a></li>
+            <li><a href="#initiatives"><i class="fa-solid fa-cubes"></i> Projects & Interviews</a></li>
+        </ul>
+        <div class="sidebar-footer">
+            <p>© 2026 M. Talha Jamil</p>
+            <span class="status-indicator"><span class="dot"></span> Online</span>
+        </div>
+    </nav>
+
+    <!-- Main Content Area -->
+    <main class="main-content">
+        
+        <!-- Toggle button for mobile nav -->
+        <button class="mobile-nav-toggle" aria-label="Toggle navigation">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <!-- Executive Summary Header (Hero) -->
+        <section id="summary" class="section hero-section fade-in">
+            <div class="hero-header">
+                <span class="eyebrow-badge">H1 2026 PERFORMANCE PORTFOLIO</span>
+                <h1 class="glow-text">Above Expectations Evaluation</h1>
+                <p class="subtitle">Consistently exceeding expectations as an IC3 engineer, driving high-impact initiatives and establishing a clear trajectory towards Staff Software Engineer (IC4) leadership.</p>
+                
+                <div class="metric-grid">
+                    <div class="metric-card cyan-glow">
+                        <div class="metric-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                        <div class="metric-value">1/1</div>
+                        <div class="metric-label">Sole BE Engineer</div>
+                        <div class="metric-desc">Maintained delivery velocity and stable backend support throughout major capacity shortages.</div>
+                    </div>
+                    <div class="metric-card purple-glow">
+                        <div class="metric-icon"><i class="fa-solid fa-circle-check"></i></div>
+                        <div class="metric-value">500+</div>
+                        <div class="metric-label">Rejected Orders Rescued</div>
+                        <div class="metric-desc">Fixed floating-point rounding errors in weightable values to restore the Panda Order History stream.</div>
+                    </div>
+                    <div class="metric-card green-glow">
+                        <div class="metric-icon"><i class="fa-solid fa-bell"></i></div>
+                        <div class="metric-value">100%</div>
+                        <div class="metric-label">On-Call Response Rate</div>
+                        <div class="metric-desc">Impeccable response, eliminated alert noise, and shielded developers from burnout.</div>
+                    </div>
+                    <div class="metric-card blue-glow">
+                        <div class="metric-icon"><i class="fa-solid fa-users"></i></div>
+                        <div class="metric-value">16</div>
+                        <div class="metric-label">Technical Interviews</div>
+                        <div class="metric-desc">Helped the company evaluate promising new developer talent from IC1 to IC3 candidates.</div>
+                    </div>
+                </div>
+
+                <div class="hero-context glass-panel">
+                    <h3><i class="fa-solid fa-circle-info"></i> Strategic Context</h3>
+                    <p>During H1 2026, the team navigated a severely constrained resourcing period. Functioned as the <strong>sole dedicated backend engineer</strong> for the majority of the half, with the Team Lead at 30-50% backend capacity and another team member transitioning out. Partnered closely with Staff engineers and leadership to own complex architectural migrations, resolve business-critical production outages, and raise the bar for team alerting, monitoring, and AI enablement.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Leadership Principles -->
+        <section id="principles" class="section fade-in">
+            <h2 class="section-title"><i class="fa-solid fa-brain"></i> Key Leadership Principles</h2>
+            <div class="principles-grid">
+                <div class="card principle-card">
+                    <div class="card-header">
+                        <div class="icon-box purple"><i class="fa-solid fa-hand-holding-hand"></i></div>
+                        <h3>Own It</h3>
+                    </div>
+                    <p class="card-body">
+                        Took full end-to-end ownership of product initiatives to guarantee successful delivery—even when it meant meeting aggressive deadlines, driving cross-team coordination with multiple global and local domains, or inventing innovative ways to solve deep-seated system constraints.
+                    </p>
+                </div>
+                <div class="card principle-card">
+                    <div class="card-header">
+                        <div class="icon-box cyan"><i class="fa-solid fa-magnifying-glass-chart"></i></div>
+                        <h3>Dive Deep</h3>
+                    </div>
+                    <p class="card-body">
+                        Exhibited deep analytical and system diagnostics across legacy domains. Deep-dived into the legacy platform's DJINI worker flow to safely decouple and migrate it to microservices, dissected complex SQL and schema pathways to completely eradicate the 'Dummy Menu' tech debt, and analyzed the intricate Item Replacement flow to design and surface high-fidelity business observability metrics.
+                    </p>
+                </div>
+                <div class="card principle-card">
+                    <div class="card-header">
+                        <div class="icon-box green"><i class="fa-solid fa-gauge-high"></i></div>
+                        <h3>Deliver Value Fast</h3>
+                    </div>
+                    <p class="card-body">
+                        Maintained relentless velocity under resource constraints. Despite operating as the sole dedicated backend engineer, worked tirelessly to unblock Frontend developers on cross-functional deliveries, and migrated static configurations over to the Dynamic Configuration Service (DCS) to enable rapid parameter updates and instantly satisfy other product and operations teams' needs.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Critical Debugging & Incident Response -->
+        <section id="debugging" class="section fade-in">
+            <h2 class="section-title"><i class="fa-solid fa-bug-slash"></i> High-Impact Issue Debugging & Resolution</h2>
+            <p class="section-intro">Demonstrated sharp diagnostics and decisive rapid-response to safeguard revenue and unblock cross-functional teams.</p>
+            
+            <div class="timeline-container">
+                <!-- Outage Card 1 -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-panel">
+                        <div class="item-meta">
+                            <span class="badge badge-error">Critical Issue Debugged</span>
+                            <span class="date"><i class="fa-regular fa-calendar"></i> Feb 11, 2026</span>
+                        </div>
+                        <h3>Adtech Attribution Issue Debugged End-to-End</h3>
+                        <p class="description"><strong>The Situation:</strong> A major race condition was causing a 55% unattribution rate (ROAS plummeted below 150%) across food ordering, threatening critical ad spend ROI.</p>
+                        <p class="description"><strong>The Action:</strong> Deep-dived into asynchronous tracking configurations with HS Engineering and Adtech teams. Formulated and deployed a targeted patch, then successfully negotiated and supervised a 21-day historical data backfill.</p>
+                        <div class="tag-row">
+                            <span class="tag">Race Condition</span>
+                            <span class="tag">Adtech</span>
+                            <span class="tag">Data Backfill</span>
+                            <span class="tag text-green">ROAS Restored</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Outage Card 2 -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-panel">
+                        <div class="item-meta">
+                            <span class="badge badge-warning">Operations Blocker</span>
+                            <span class="date"><i class="fa-regular fa-calendar"></i> Apr 23, 2026</span>
+                        </div>
+                        <h3>Missing Pharmacy Vendors Rectified</h3>
+                        <p class="description"><strong>The Situation:</strong> Local grocery/pharmacy operations reported empty vendor lists, completely blocking orders in active delivery zones.</p>
+                        <p class="description"><strong>The Action:</strong> Traced the failure to a rogue "reverse shrinkage" experiment configuration. Extracted correct payload data and provided specific, actionable execution cURL scripts to unblock the Vendor Support Services (VSS) and Logistics domains.</p>
+                        <div class="tag-row">
+                            <span class="tag">Experiment Spillover</span>
+                            <span class="tag">VSS Support</span>
+                            <span class="tag">Operations</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Outage Card 3 -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-panel">
+                        <div class="item-meta">
+                            <span class="badge badge-info">Tax & Compliance</span>
+                            <span class="date"><i class="fa-regular fa-calendar"></i> Jan 21, 2026</span>
+                        </div>
+                        <h3>ZATCA Tax Invoice Discount Defect (QCS-2520)</h3>
+                        <p class="description"><strong>The Situation:</strong> BOGO (Buy One Get One) discounts were getting truncated, causing discrepancies in tax invoices and risking heavy penalties under Saudi tax authorities (ZATCA).</p>
+                        <p class="description"><strong>The Action:</strong> Dive-deep into legacy Ruby logic to isolate a flaw with integer division. Rewrote the rounding and division precision mathematical checks, eliminating rejections and securing financial compliance.</p>
+                        <div class="tag-row">
+                            <span class="tag">Ruby Monolith</span>
+                            <span class="tag">Integer Division</span>
+                            <span class="tag">ZATCA Compliance</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Outage Card 4 -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-panel">
+                        <div class="item-meta">
+                            <span class="badge badge-error">Infrastructure</span>
+                            <span class="date"><i class="fa-regular fa-calendar"></i> Jan 17, 2026</span>
+                        </div>
+                        <h3>Voice Blaster Outage Mitigation</h3>
+                        <p class="description"><strong>The Situation:</strong> Critical telephony systems suffered a 100% call-delivery failure rate, throwing 502 Bad Gateway alerts during high-priority vendor confirmations.</p>
+                        <p class="description"><strong>The Action:</strong> Traced the regression instantly to an Etronics Active/Active infrastructure routing configuration. Decisively bypassed the affected path via feature toggle, halting the failure cascade within minutes.</p>
+                        <div class="tag-row">
+                            <span class="tag">Infrastructure Outage</span>
+                            <span class="tag">Active/Active</span>
+                            <span class="tag">Feature Toggle</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Outage Card 5 -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-panel">
+                        <div class="item-meta">
+                            <span class="badge badge-error">Panda Order History</span>
+                            <span class="date"><i class="fa-regular fa-calendar"></i> Feb 11, 2026</span>
+                        </div>
+                        <h3>Panda Order Rounding Error Fixed (QCS-2592)</h3>
+                        <p class="description"><strong>The Situation:</strong> A floating-point representation error in weightable values corrupted transaction payloads, leading to ~500 order rejections within the Panda Order History plugin and blocking vendor order fulfillment.</p>
+                        <p class="description"><strong>The Action:</strong> Traced the floating-point truncation math within price calculations. Engineered and deployed a precision rounding validation fix to completely restore order flow and resume processing on all affected vendor portals.</p>
+                        <div class="tag-row">
+                            <span class="tag">Floating-Point Math</span>
+                            <span class="tag">Rounding Precision</span>
+                            <span class="tag">Vendor Integration</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Expanding Additional Micro-fixes -->
+            <div class="micro-fixes glass-panel">
+                <h3><i class="fa-solid fa-list-check"></i> Additional Investigations</h3>
+                <div class="fixes-grid">
+                    <div class="fix-item">
+                        <span class="fix-id">Dynamic Pricing</span>
+                        <p><strong>Alert Surge Mitigated:</strong> Expedited circuit breaker PRs and used Grafana container diagnostics to isolate high error rates to a localized single GCP pod failure rather than a global distributed outage, preventing unnecessary code rollbacks.</p>
+                    </div>
+                    <div class="fix-item">
+                        <span class="fix-id">Promo Blocker</span>
+                        <p><strong>Sampling Promotion:</strong> Audited Supergraph query mapping and escalated mapping anomalies to Global DH, unblocking a key marketing initiative.</p>
+                    </div>
+                    <div class="fix-item">
+                        <span class="fix-id">Cart-Redis</span>
+                        <p><strong>Staging Redis OOM:</strong> Traced `qc_cart_service` crash loops to a Redis bottleneck during AWS migration. Escalated and executed cluster scale-up.</p>
+                    </div>
+                    <div class="fix-item">
+                        <span class="fix-id">FBT Config</span>
+                        <p><strong>FBT Swimlane Error:</strong> Identified and corrected page-level toggle overrides, correctly moving the toggle to the swimlane level to restore full functionality.</p>
+                    </div>
+                    <div class="fix-item">
+                        <span class="fix-id">Payment Validation</span>
+                        <p><strong>Item Replacement Payments:</strong> Validated stability of backend `payments/initialize` API, redirecting the team to an iOS/Android Null Pointer Exception (NPE).</p>
+                    </div>
+                    <div class="fix-item">
+                        <span class="fix-id">AWS Migration</span>
+                        <p><strong>Price GraphQL 404:</strong> Found deprecated GCP domains inside migrating services and redirected microservices to the new AWS CloudFront endpoints.</p>
+                    </div>
+                    <div class="fix-item">
+                        <span class="fix-id">ST091066</span>
+                        <p><strong>Stuck Stock Transfer Rescue:</strong> Diagnosed SM/IM DB sync fail-point and duplicated the stock transfer with clean state hashes, restoring stock levels and Riyadh branch visibility.</p>
+                    </div>
+                    <div class="fix-item">
+                        <span class="fix-id">OrdersController</span>
+                        <p><strong>422 Error Surge Solved:</strong> Used Grafana and logs to isolate a sudden 100% surge in 422 errors to a behavioral shift (Friday prayer store closures triggering valid checkout validation) rather than a software regression, saving rollback time.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Architectural Migrations & Design Decisions -->
+        <section id="migrations" class="section fade-in">
+            <h2 class="section-title"><i class="fa-solid fa-network-wired"></i> Core Architectural Migrations</h2>
+            <p class="section-intro">De-risking and modernizing legacy codebases, transforming synchronous dependency traps into resilient, event-driven architectures.</p>
+
+            <div class="architecture-layout">
+                <!-- Large Migration Card 1 -->
+                <div class="card migration-card">
+                    <div class="migration-header">
+                        <div class="mig-title">
+                            <span class="badge badge-success">Major Migration</span>
+                            <h3>Cart-Order Association Decoupling</h3>
+                        </div>
+                        <span class="tech-tag">Event-Driven Go</span>
+                    </div>
+                    
+                    <div class="migration-flow">
+                        <div class="flow-step">
+                            <span class="flow-label">Legacy System</span>
+                            <div class="flow-box red-border">
+                                <p>Platform Monolith</p>
+                                <span class="arrow-down"></span>
+                                <p>DJINI Worker (Sync Http)</p>
+                            </div>
+                            <span class="flow-desc">High latency, tight synchronous coupling, single point of failure.</span>
+                        </div>
+                        <div class="flow-step">
+                            <span class="flow-label">Modern Architecture</span>
+                            <div class="flow-box green-border">
+                                <p>Event: Order Accepted By Vendor</p>
+                                <span class="arrow-down"></span>
+                                <p>QC-Cart (Go Consumer)</p>
+                            </div>
+                            <span class="flow-desc">Asynchronous, event-driven, with retries and dead-letter queues (DLQ).</span>
+                        </div>
+                    </div>
+
+                    <div class="migration-details">
+                        <h4>Impact & Engineering Feats:</h4>
+                        <ul>
+                            <li>Fully eradicated the fragile and hard-to-maintain legacy DJINI Worker dependency.</li>
+                            <li>Engineered `QC-Cart` to consume raw Kafka/Slim events directly, drastically reducing Monolith reliance.</li>
+                            <li>Decreased network hops, leading to a faster, safer, and highly observable order completion lifecycle.</li>
+                            <li>Implemented Dead Letter Queues (DLQs) to prevent message loss and allow automated retries during downstream failures.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Large Migration Card 2 -->
+                <div class="card migration-card border-glow">
+                    <div class="migration-header">
+                        <div class="mig-title">
+                            <span class="badge badge-success">Tech Debt Removal</span>
+                            <h3>Eradicating "Dummy Menu" Generation</h3>
+                        </div>
+                        <span class="tech-tag">Database Redesign</span>
+                    </div>
+                    
+                    <div class="migration-flow">
+                        <div class="flow-step">
+                            <span class="flow-label">Legacy System Hack</span>
+                            <div class="flow-box red-border">
+                                <p>Mandatory FK constraint</p>
+                                <span class="arrow-down"></span>
+                                <p>Auto-Generate "Dummy Menus"</p>
+                            </div>
+                            <span class="flow-desc">Bloated database with fake entities and added high operational overhead on the order write-path.</span>
+                        </div>
+                        <div class="flow-step">
+                            <span class="flow-label">Clean DB-Supported Flow</span>
+                            <div class="flow-box green-border">
+                                <p>Nullable menuitem_id Column</p>
+                                <span class="arrow-down"></span>
+                                <p>Direct JSON: external_data</p>
+                            </div>
+                            <span class="flow-desc">Zero dummy entity creation, cleaner schemas, and streamlined order insertion latency.</span>
+                        </div>
+                    </div>
+
+                    <p class="description-text">
+                        For years, legacy constraints required generating heavy "Dummy Menus" during order processing simply to pass an outdated database foreign key validation. Product metadata was already stored inside `external_data`, making this DB operation redundant and resource-heavy.
+                    </p>
+                    <div class="migration-details">
+                        <h4>Strategic Resolution:</h4>
+                        <ul>
+                            <li>Overhauled the critical order creation query pathway, transitioning `menuitem_id` to a nullable column in the schema.</li>
+                            <li>Wrapped the legacy auto-creation logic behind dynamic feature flags for zero-downtime, staged release.</li>
+                            <li>Collaborated with global Operations and local domain testers to thoroughly validate transaction safety on staging.</li>
+                            <li><strong>Results:</strong> Complete cessation of heavy database entity generation, streamlining the checkout database write-path and cleaning up years of system bloat.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Architectural Vision: QC Insight -->
+                <div class="card vision-card border-glow">
+                    <div class="vision-header">
+                        <div class="icon-pulse"><i class="fa-solid fa-lightbulb"></i></div>
+                        <div>
+                            <span class="badge badge-purple">Architectural Vision</span>
+                            <h3>Strategic Discovery: QC Insight Microservice</h3>
+                        </div>
+                    </div>
+                    <div class="vision-content">
+                        <p>While implementing <em>Rolling Tags</em>, I recognized that pulling real-time metadata (such as "1000+ Orders Placed", "Best Selling", "Expiring Soon") via existing monolithic APIs was unscalable and brittle. It created severe latency risk on high-traffic Product Listing Pages (PLP).</p>
+                        
+                        <div class="vision-steps">
+                            <div class="step-badge">1. Authored Comprehensive RFC</div>
+                            <p>Proposed a dedicated microservice, detailing event-driven inventory listeners and data consumption pipeline designs.</p>
+                            
+                            <div class="step-badge">2. Cross-Tribe Coordination</div>
+                            <p>Chaired alignment sessions bridging Product, Architecture, Data Engineering (DE), and Logistics teams to define contracts.</p>
+                            
+                            <div class="step-badge">3. Navigating Complex Logistical Constraints</div>
+                            <p>Mapped out solutions for FIFO stock-movements, caching layers, and differences between SKU-level and unit-level product aging.</p>
+                        </div>
+                        <p class="vision-footer"><strong>Long-term Impact:</strong> Lays the core foundational groundwork to power advanced, real-time data tagging and personalized inventory indicators for upcoming halves.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Observability, Alert Tuning, and On-Call Excellence -->
+        <section id="observability" class="section fade-in">
+            <h2 class="section-title"><i class="fa-solid fa-chart-line"></i> Observability & On-Call Excellence</h2>
+            <p class="section-intro">Advocating for <em>"Catch issues before they are reported"</em> through proactive metric development and system stabilization.</p>
+
+            <div class="observability-grid">
+                <!-- Dashboard 1 -->
+                <div class="card dashboard-card">
+                    <div class="dashboard-header">
+                        <i class="fa-solid fa-chart-pie purple-text"></i>
+                        <h3>The New QC Business Dashboard</h3>
+                    </div>
+                    <p>Designed and launched an advanced business metrics dashboard in Grafana. Transitioned the team from scraping slow, expensive text logs to querying real-time structured business metrics.</p>
+                    <div class="metric-tags">
+                        <span>Vendor Acceptance Rates</span>
+                        <span>Order Size Dynamics</span>
+                        <span>Order Value Spikes</span>
+                        <span>Active Cart Funnel</span>
+                    </div>
+                </div>
+
+                <!-- Dashboard 2 -->
+                <div class="card dashboard-card">
+                    <div class="dashboard-header">
+                        <i class="fa-solid fa-arrows-spin cyan-text"></i>
+                        <h3>Item Replacement (IR) Observability</h3>
+                    </div>
+                    <p>Spearheaded monitoring of the highly sensitive Item Replacement flow. Surfaced granular metrics that transformed business visibility into automated swap performance and cart value retention.</p>
+                    <div class="metric-tags">
+                        <span>Higher vs Lower Pricing</span>
+                        <span>SLA Warning Timers</span>
+                        <span>Conversion Funnel Success</span>
+                        <span>Customer Notification Coverage</span>
+                    </div>
+                </div>
+
+                <!-- Dashboard 3 -->
+                <div class="card dashboard-card">
+                    <div class="dashboard-header">
+                        <i class="fa-solid fa-cart-shopping green-text"></i>
+                        <h3>QC Cart Lifecycle Monitoring</h3>
+                    </div>
+                    <p>Established core observability for the QC Cart service. Deployed a dedicated dashboard tracking the complete cart lifecycle, segmenting data dynamically by API endpoints and user-agents to capture granular behavioral insights.</p>
+                    <div class="metric-tags">
+                        <span>Carts Created & Switched</span>
+                        <span>Carts Deleted & Completed</span>
+                        <span>Endpoint Route Distribution</span>
+                        <span>User-Agent Segmentation</span>
+                    </div>
+                </div>
+
+                <!-- Scheduled Downtime Mitigation -->
+                <div class="card incident-card full-width-card">
+                    <div class="card-header">
+                        <div class="badge badge-info"><i class="fa-solid fa-calendar-check"></i> On-Call Scheduled Downtime Management</div>
+                        <h3>Managing Upstream QC Invoicing / ZATCA Scheduled Maintenance</h3>
+                    </div>
+                    <div class="incident-body">
+                        <p><strong>The Context:</strong> A planned upstream ZATCA service scheduled downtime resulted in a temporary backup of <strong>500,000 unreported tax invoices</strong> across the network (including 50,000 specific to QC). Controlled processing was required to prevent downstream cascade failures on the Payment Service.</p>
+                        
+                        <div class="action-steps">
+                            <div class="action-box">
+                                <span class="box-num">1</span>
+                                <p><strong>Proactive Mitigation:</strong> Acted as primary on-call anchor. Temporarily paused internal consumers during the downtime to prevent queue overload and keep memory usage stable.</p>
+                            </div>
+                            <div class="action-box">
+                                <span class="box-num">2</span>
+                                <p><strong>Engineered Throttler:</strong> Developed and deployed PRs `#529` and `#530` to enforce a strict, single-message throughput limit once the upstream service resumed operations.</p>
+                            </div>
+                            <div class="action-box">
+                                <span class="box-num">3</span>
+                                <p><strong>Backlog Safely Drained:</strong> Successfully drained the 50,000 invoice backlog with zero system crashes, corrected schemas on any rejected entries, and safely completed the reporting.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Alert Tuning -->
+                <div class="card stat-card-horizontal">
+                    <div class="stat-content">
+                        <h3><i class="fa-solid fa-sliders text-green"></i> Alert Tuning & Noise Reduction</h3>
+                        <p>Faced with high developer alert fatigue, I systematically audited and modified over-sensitive Opsgenie thresholds. Deployed permanent, on-the-go micro-fixes to resolve low-value recurring alert triggers, transforming on-call duty into a focused, highly reliable environment.</p>
+                    </div>
+                    <div class="stat-badge-large">
+                        <span class="num text-green">0</span>
+                        <span class="lbl">Missed Alerts</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- AI Tooling & Adoption -->
+        <section id="ai-adoption" class="section fade-in">
+            <h2 class="section-title"><i class="fa-solid fa-robot"></i> AI Enablement</h2>
+            <p class="section-intro">Leveraging next-generation AI technologies as force multipliers for team productivity, automation, and tech onboarding.</p>
+
+            <div class="ai-grid">
+                <!-- AI Box 1 -->
+                <div class="card ai-card">
+                    <div class="ai-icon-large"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+                    <h3>Automated On-Call Report</h3>
+                    <p class="description">
+                        Designed and built a functional prototype using Gemini Cloud and Grafana MCP integrations. Replaced manual, error-prone shift spreadsheet tracking with automated summaries.
+                    </p>
+                    <span class="ai-tech">Gemini Cloud + MCP</span>
+                </div>
+
+                <!-- AI Box 2 -->
+                <div class="card ai-card">
+                    <div class="ai-icon-large"><i class="fa-solid fa-code-merge"></i></div>
+                    <h3>AI Champion: Git AI & Herogen</h3>
+                    <p class="description">
+                        Acted as the team's AI Champion. Taught the engineering group how to utilize `Git AI` for organization-wide tracking, and facilitated setting up `Herogen` automated PR code reviews for the `qc-experience` repository while driving continuous follow-up and implementation.
+                    </p>
+                    <span class="ai-tech">Git AI + Herogen</span>
+                </div>
+
+                <!-- AI Box 3 -->
+                <div class="card ai-card">
+                    <div class="ai-icon-large"><i class="fa-solid fa-chalkboard-user"></i></div>
+                    <h3>Requirements to PRs Talk</h3>
+                    <p class="description">
+                        Delivered a highly praised talk at Technical Excellence on automation: *Automated Workflow: Product Requirements to Pull Requests & Coding Effectively with Herogen*. Shared concrete strategies for safe AI-assisted development.
+                    </p>
+                    <span class="ai-tech">Tech Talk Session</span>
+                </div>
+
+                <!-- AI Box 4 -->
+                <div class="card ai-card">
+                    <div class="ai-icon-large"><i class="fa-solid fa-book-bookmark"></i></div>
+                    <h3>AI-Optimized Documentation</h3>
+                    <p class="description">
+                        Created localized AI instruction files (such as `GEMINI.md`) and rich developer manuals across microservices. Established precise guardrails and system context, allowing automated agents to execute code tasks safely.
+                    </p>
+                    <span class="ai-tech">Context Engineering</span>
+                </div>
+
+                <!-- Mentorship -->
+                <div class="card mentorship-card">
+                    <div class="card-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                    <div class="mentorship-content">
+                        <h3>Cross-Platform Backend Mentorship</h3>
+                        <p>
+                            Utilized modern AI tools and pairs-programming to rapidly onboard an iOS engineer into the backend Go/Ruby ecosystem. Drastically reduced ramp-up time from months to weeks, enabling them to independently deliver server-side features.
+                        </p>
+                        <div class="quote-block">
+                            "Leveraging AI tools acts as a massive force multiplier for cross-domain engineering growth."
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Product Initiatives & Interviews -->
+        <section id="initiatives" class="section fade-in">
+            <h2 class="section-title"><i class="fa-solid fa-cubes"></i> Product Delivery & Team Scale</h2>
+            <p class="section-intro">Leading technical scoping, alignment, and high-quality deliveries while scaling the engineering organization.</p>
+
+            <div class="initiatives-layout">
+                <!-- Product grid -->
+                <div class="glass-panel delivery-panel">
+                    <h3><i class="fa-solid fa-circle-check text-green"></i> Delivered Product Initiatives</h3>
+                    <ul class="product-list">
+                        <li>
+                            <span class="role-badge-small lead">Initiative Lead</span>
+                            <strong>Disclaimer & Refund Promise:</strong> Scoped, aligned, and spearheaded backend architecture to protect customer trust.
+                        </li>
+                        <li>
+                            <span class="role-badge-small lead">Initiative Lead</span>
+                            <strong>Enable Rolling Tags on PLP/PDP:</strong> Led core platform execution to surface inventory indicators.
+                        </li>
+                        <li>
+                            <span class="role-badge-small dev">BE Dev</span>
+                            <strong>Campaign Floater Widget:</strong> Handled complex backend layouts and state queries under aggressive schedules.
+                        </li>
+                        <li>
+                            <span class="role-badge-small dev">BE Dev</span>
+                            <strong>Price Transparency:</strong> Engineered core APIs to detail breakdown fees and itemized calculations.
+                        </li>
+                        <li>
+                            <span class="role-badge-small dev">BE Dev</span>
+                            <strong>Dynamic Freshness Label:</strong> Built backend triggers indicating grocery item shelf-life states.
+                        </li>
+                        <li>
+                            <span class="role-badge-small dev">BE Dev</span>
+                            <strong>Surface Promo Mechanics:</strong> Surfaced backend promotional configurations cleanly in search results.
+                        </li>
+                        <li>
+                            <span class="role-badge-small migration">BE Dev</span>
+                            <strong>DH SMS Service Migration:</strong> Migrated legacy messaging calls to global DH SMS service for stock reporting.
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Interviews and Knowledge -->
+                <div class="scale-knowledge">
+                    <!-- Technical Interviews -->
+                    <div class="card interviews-card">
+                        <div class="interview-header">
+                            <span class="count-badge">16</span>
+                            <h3>Technical Interviews Conducted</h3>
+                        </div>
+                        <p>Conducted extensive Evaluator loops for <strong>IC1 to IC3</strong> developer candidates, helping the company evaluate promising new talent. Adopted and structured a new evaluation approach designed to elevate evaluation accuracy.</p>
+                        <div class="interview-dates">
+                            <span class="date-tag">Dec 28, 2025</span>
+                            <span class="date-tag">Jan 4, 2026</span>
+                            <span class="date-tag">Jan 11, 2026</span>
+                            <span class="date-tag">Jan 18, 2026</span>
+                            <span class="date-tag">Jan 19, 2026</span>
+                            <span class="date-tag">Jan 26, 2026</span>
+                            <span class="date-tag">Jan 28, 2026</span>
+                            <span class="date-tag">Feb 1, 2026 (x2)</span>
+                            <span class="date-tag">Feb 2, 2026</span>
+                            <span class="date-tag">Feb 8, 2026</span>
+                            <span class="date-tag">Feb 9, 2026</span>
+                            <span class="date-tag">Feb 16, 2026</span>
+                            <span class="date-tag">Mar 29, 2026</span>
+                            <span class="date-tag">Apr 12, 2026</span>
+                            <span class="date-tag">Apr 26, 2026</span>
+                        </div>
+                    </div>
+
+                    <!-- Knowledge Sharing -->
+                    <div class="card knowledge-card">
+                        <h3><i class="fa-solid fa-graduation-cap"></i> Community & Tech Talks</h3>
+                        <div class="talks-grid">
+                            <div class="talk-item">
+                                <span class="talk-date">Mar 3</span>
+                                <div>
+                                    <h4>Circuit Breakers in Microservices</h4>
+                                    <span class="talk-event">Tech Excellence Session</span>
+                                    <p>Established foundational best practices for building fault-tolerant microservices across the entire engineering community.</p>
+                                </div>
+                            </div>
+                            <div class="talk-item">
+                                <span class="talk-date">Apr 8</span>
+                                <div>
+                                    <h4>Lessons Learned From QC Cart Migration</h4>
+                                    <span class="talk-event">BE Chapter Session</span>
+                                    <p>Dissected infrastructure edge cases from the AWS staging migration to de-risk future initiatives.</p>
+                                </div>
+                            </div>
+                            <div class="talk-item">
+                                <span class="talk-date">May 4</span>
+                                <div>
+                                    <h4>Introduction to DCS (Dynamic Config)</h4>
+                                    <span class="talk-event">Tribe-Level Meeting</span>
+                                    <p>Bridged complex distributed architectural concepts for broader technical and product stakeholders across the entire Tribe.</p>
+                                </div>
+                            </div>
+                            <div class="talk-item">
+                                <span class="talk-date">May 14</span>
+                                <div>
+                                    <h4>Product Requirements to PRs with Herogen</h4>
+                                    <span class="talk-event">Tech Excellence Session</span>
+                                    <p>Shared knowledge on automation strategies and taught the engineering organization how to safely integrate AI into their daily development lifecycle.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Invoicing Overhaul Details -->
+        <section class="section fade-in">
+            <div class="card invoicing-overhaul glass-panel border-glow">
+                <div class="card-header">
+                    <div class="icon-box green"><i class="fa-solid fa-vault"></i></div>
+                    <div>
+                        <span class="badge badge-success">Tech Debt Masterclass</span>
+                        <h3>QC Invoicing Overhaul & Revitalization</h3>
+                    </div>
+                </div>
+                <div class="overhaul-content">
+                    <p>Led a massive, self-directed engineering initiative to clean, optimize, and secure the neglected `QC Invoicing` service. This work was explicitly praised by engineering leadership as "impressive work demonstrating high ownership."</p>
+                    
+                    <div class="overhaul-grid">
+                        <div class="overhaul-stat">
+                            <span class="num text-green">20+ → 2</span>
+                            <span class="lbl">Active Security Issues Slashed</span>
+                        </div>
+                        <div class="overhaul-stat">
+                            <span class="num text-green">v5</span>
+                            <span class="lbl">DB pgx Library Upgraded</span>
+                        </div>
+                        <div class="overhaul-stat">
+                            <span class="num text-green">Jarvis</span>
+                            <span class="lbl">Infrastructure Fully Migrated</span>
+                        </div>
+                    </div>
+
+                    <div class="overhaul-points">
+                        <div class="point">
+                            <i class="fa-solid fa-shield-virus text-green"></i>
+                            <p><strong>Security Overhaul:</strong> Completely resolved active container vulnerabilities and Go-dependency security exposures.</p>
+                        </div>
+                        <div class="point">
+                            <i class="fa-solid fa-broom text-green"></i>
+                            <p><strong>Cleanup:</strong> Stripped out multiple legacy ZATCA paths and obsolete GDP dependencies to reduce binary weights.</p>
+                        </div>
+                        <div class="point">
+                            <i class="fa-solid fa-route text-green"></i>
+                            <p><strong>Strategic Roadmap:</strong> Authored immediate integration plans for replacing Cucumber testing, deprecating Consul, and merging `go-lib-app`.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Interactive script link -->
+    <script src="script.js"></script>
+</body>
+</html>
