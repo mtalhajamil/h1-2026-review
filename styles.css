@@ -977,19 +977,18 @@ body {
 }
 
 .mentorship-card {
-    grid-column: span 1;
+    grid-column: span 2;
     display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-    align-items: flex-start;
+    gap: 2rem;
+    align-items: center;
 }
 
 .mentorship-card .card-icon {
-    font-size: 2rem;
+    font-size: 3rem;
     color: var(--accent-green);
     background-color: rgba(46, 160, 67, 0.1);
-    width: 60px;
-    height: 60px;
+    width: 80px;
+    height: 80px;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -1282,3 +1281,81 @@ body {
         gap: 1rem;
     }
 }
+
+/* --- IC3 Framework Alignment Styles --- */
+.framework-panel {
+    background: linear-gradient(135deg, rgba(22, 27, 34, 0.7) 0%, rgba(31, 111, 235, 0.04) 100%);
+    border-color: rgba(31, 111, 235, 0.2);
+}
+
+.framework-summary {
+    color: var(--text-muted);
+    font-size: 1.05rem;
+    margin-bottom: 2.5rem;
+}
+
+.framework-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.1fr;
+    gap: 3rem;
+}
+
+.framework-col {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.framework-col h4 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 0.5rem;
+}
+
+.guideline-card, .evidence-card {
+    background-color: rgba(22, 27, 34, 0.5);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    min-height: 140px;
+    justify-content: center;
+}
+
+.guideline-card h5, .evidence-card h5 {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--text-main);
+}
+
+.guideline-card .quote {
+    font-size: 0.88rem;
+    font-style: italic;
+    color: var(--text-muted);
+    border-left: 2px solid var(--border-color);
+    padding-left: 0.8rem;
+}
+
+.evidence-card p {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    line-height: 1.5;
+}
+
+.evidence-card h5 {
+    color: var(--accent-cyan);
+}
+
+/* Border Glow Colors for Evidence */
+.purple-border { border-left: 3px solid var(--accent-purple); }
+.cyan-border { border-left: 3px solid var(--accent-cyan); }
+.green-border { border-left: 3px solid var(--accent-green); }
+.blue-border { border-left: 3px solid var(--accent-blue); }
+.orange-border { border-left: 3px solid #ff7b72; }
