@@ -961,18 +961,19 @@ body {
 }
 
 .mentorship-card {
-    grid-column: span 2;
+    grid-column: span 1;
     display: flex;
-    gap: 2rem;
-    align-items: center;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: flex-start;
 }
 
 .mentorship-card .card-icon {
-    font-size: 3rem;
+    font-size: 2rem;
     color: var(--accent-green);
     background-color: rgba(46, 160, 67, 0.1);
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
     display: flex;
     align-items: center;
