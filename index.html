@@ -784,48 +784,46 @@
         <!-- Proactive Feedback -->
         <section id="feedback" class="section fade-in">
             <h2 class="section-title"><i class="fa-solid fa-comments"></i> Proactive Feedback</h2>
-            <p class="section-intro">Selected praise and feedback from colleagues, product managers, and leadership recognizing domain ownership, high velocity, and positive squad vibes.</p>
+            
+            <div class="glass-panel" style="width: 100%;">
+                <p class="description-text" style="font-size: 1.1rem; line-height: 1.6; margin-bottom: 2rem;">
+                    <strong>The Action:</strong> Maintained a rigorous and proactive cadence of 1:1 syncs across multiple levels of engineering and product leadership to ensure continuous alignment, gather actionable feedback, and drive cross-functional initiatives.
+                </p>
 
-            <div class="glass-panel" style="width: 100%; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem;">
-                <!-- Card 1: Engineering Manager -->
-                <div class="card" style="background-color: rgba(13, 17, 23, 0.4); border: 1px solid var(--border-color); padding: 1.5rem; border-radius: 8px; display: flex; flex-direction: column; justify-content: space-between; gap: 1rem;">
-                    <div>
-                        <div style="font-size: 1.5rem; color: var(--accent-cyan); margin-bottom: 0.5rem;"><i class="fa-solid fa-quote-left"></i></div>
-                        <p style="font-size: 0.92rem; line-height: 1.6; font-style: italic; color: var(--text-main);">
-                            "Talha’s ownership of the local services and legacy code refactoring has been exceptional. He autonomously drove the QC Invoicing cleanup, slashing vulnerability alerts and upgrading core database libraries without any external supervision."
-                        </p>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem;">
+                    <!-- Card 1: Team Lead -->
+                    <div class="card" style="background-color: rgba(13, 17, 23, 0.4); border: 1px solid var(--border-color); padding: 1.5rem; border-radius: 8px; border-left: 3px solid var(--accent-cyan); display: flex; flex-direction: column; gap: 0.5rem;">
+                        <span class="badge" style="padding: 0.15rem 0.5rem; font-size: 0.7rem; align-self: flex-start; background-color: rgba(0, 242, 254, 0.1); color: var(--accent-cyan); border: 1px solid rgba(0, 242, 254, 0.2); font-family: 'Fira Code', monospace; font-weight: 700;">Weekly</span>
+                        <h4 style="font-size: 1.1rem; font-weight: 700; color: var(--text-main); margin-top: 0.2rem;">With Team Lead</h4>
+                        <p style="font-size: 0.88rem; color: var(--text-muted); line-height: 1.5;">Focused on sprint execution, unblocking immediate technical hurdles, and managing team capacity during constrained resource periods.</p>
                     </div>
-                    <div style="border-top: 1px solid var(--border-color); padding-top: 0.8rem; margin-top: 0.5rem;">
-                        <strong style="font-size: 0.95rem; color: var(--text-main); display: block;">Engineering Manager</strong>
-                        <span style="font-size: 0.75rem; color: var(--accent-cyan); font-family: 'Fira Code', monospace;">QC Tribe Leadership</span>
-                    </div>
-                </div>
 
-                <!-- Card 2: Product Manager -->
-                <div class="card" style="background-color: rgba(13, 17, 23, 0.4); border: 1px solid var(--border-color); padding: 1.5rem; border-radius: 8px; display: flex; flex-direction: column; justify-content: space-between; gap: 1rem;">
-                    <div>
-                        <div style="font-size: 1.5rem; color: var(--accent-purple); margin-bottom: 0.5rem;"><i class="fa-solid fa-quote-left"></i></div>
-                        <p style="font-size: 0.92rem; line-height: 1.6; font-style: italic; color: var(--text-main);">
-                            "Talha kept product deliveries running seamlessly even during a massive backend resource shortage. He moved our configurations over to DCS, which empowered non-technical business teams to update features on-the-fly without needing any developers' intervention."
-                        </p>
+                    <!-- Card 2: Product Manager -->
+                    <div class="card" style="background-color: rgba(13, 17, 23, 0.4); border: 1px solid var(--border-color); padding: 1.5rem; border-radius: 8px; border-left: 3px solid var(--accent-purple); display: flex; flex-direction: column; gap: 0.5rem;">
+                        <span class="badge" style="padding: 0.15rem 0.5rem; font-size: 0.7rem; align-self: flex-start; background-color: rgba(138, 43, 226, 0.1); color: var(--accent-purple); border: 1px solid rgba(138, 43, 226, 0.2); font-family: 'Fira Code', monospace; font-weight: 700;">Bi-Weekly (Every 2 Weeks)</span>
+                        <h4 style="font-size: 1.1rem; font-weight: 700; color: var(--text-main); margin-top: 0.2rem;">With Product Manager</h4>
+                        <p style="font-size: 0.88rem; color: var(--text-muted); line-height: 1.5;">Bridged the gap between technical execution and product vision, ensuring feature requirements were clear, prioritized correctly, and technically viable during scoping and delivery.</p>
                     </div>
-                    <div style="border-top: 1px solid var(--border-color); padding-top: 0.8rem; margin-top: 0.5rem;">
-                        <strong style="font-size: 0.95rem; color: var(--text-main); display: block;">Product Manager</strong>
-                        <span style="font-size: 0.75rem; color: var(--accent-purple); font-family: 'Fira Code', monospace;">QC Order Experience Squad</span>
-                    </div>
-                </div>
 
-                <!-- Card 3: Senior Frontend Developer Peer -->
-                <div class="card" style="background-color: rgba(13, 17, 23, 0.4); border: 1px solid var(--border-color); padding: 1.5rem; border-radius: 8px; display: flex; flex-direction: column; justify-content: space-between; gap: 1rem;">
-                    <div>
-                        <div style="font-size: 1.5rem; color: var(--accent-green); margin-bottom: 0.5rem;"><i class="fa-solid fa-quote-left"></i></div>
-                        <p style="font-size: 0.92rem; line-height: 1.6; font-style: italic; color: var(--text-main);">
-                            "Collaborating with Talha on front-end integrations was incredibly smooth. He always planned tasks and API handoffs proactively to keep blockers at an absolute minimum. He brings great energy and empathy to the team."
-                        </p>
+                    <!-- Card 3: Senior Engineering Manager -->
+                    <div class="card" style="background-color: rgba(13, 17, 23, 0.4); border: 1px solid var(--border-color); padding: 1.5rem; border-radius: 8px; border-left: 3px solid var(--accent-green); display: flex; flex-direction: column; gap: 0.5rem;">
+                        <span class="badge" style="padding: 0.15rem 0.5rem; font-size: 0.7rem; align-self: flex-start; background-color: rgba(46, 160, 67, 0.1); color: var(--accent-green); border: 1px solid rgba(46, 160, 67, 0.2); font-family: 'Fira Code', monospace; font-weight: 700;">Every 3 Weeks</span>
+                        <h4 style="font-size: 1.1rem; font-weight: 700; color: var(--text-main); margin-top: 0.2rem;">With Senior Engineering Manager</h4>
+                        <p style="font-size: 0.88rem; color: var(--text-muted); line-height: 1.5;">Aligned on cross-team dependencies, operational health metrics, and mid-term technical roadmaps.</p>
                     </div>
-                    <div style="border-top: 1px solid var(--border-color); padding-top: 0.8rem; margin-top: 0.5rem;">
-                        <strong style="font-size: 0.95rem; color: var(--text-main); display: block;">Senior Frontend Engineer</strong>
-                        <span style="font-size: 0.75rem; color: var(--accent-green); font-family: 'Fira Code', monospace;">Squad Peer</span>
+
+                    <!-- Card 4: Staff Engineer -->
+                    <div class="card" style="background-color: rgba(13, 17, 23, 0.4); border: 1px solid var(--border-color); padding: 1.5rem; border-radius: 8px; border-left: 3px solid var(--accent-blue); display: flex; flex-direction: column; gap: 0.5rem;">
+                        <span class="badge" style="padding: 0.15rem 0.5rem; font-size: 0.7rem; align-self: flex-start; background-color: rgba(31, 111, 235, 0.1); color: var(--accent-blue); border: 1px solid rgba(31, 111, 235, 0.2); font-family: 'Fira Code', monospace; font-weight: 700;">Monthly</span>
+                        <h4 style="font-size: 1.1rem; font-weight: 700; color: var(--text-main); margin-top: 0.2rem;">With Staff Engineer</h4>
+                        <p style="font-size: 0.88rem; color: var(--text-muted); line-height: 1.5;">Engaged in deep-dive architectural discussions, peer mentorship, and system design validations (e.g., QC Insight RFC, DCS infrastructure integration).</p>
+                    </div>
+
+                    <!-- Card 5: Engineering Director -->
+                    <div class="card" style="background-color: rgba(13, 17, 23, 0.4); border: 1px solid var(--border-color); padding: 1.5rem; border-radius: 8px; border-left: 3px solid #ff7b72; display: flex; flex-direction: column; gap: 0.5rem;">
+                        <span class="badge" style="padding: 0.15rem 0.5rem; font-size: 0.7rem; align-self: flex-start; background-color: rgba(255, 123, 114, 0.1); color: #ff7b72; border: 1px solid rgba(255, 123, 114, 0.2); font-family: 'Fira Code', monospace; font-weight: 700;">Bi-Monthly (Every 2 Months)</span>
+                        <h4 style="font-size: 1.1rem; font-weight: 700; color: var(--text-main); margin-top: 0.2rem;">With Engineering Director</h4>
+                        <p style="font-size: 0.88rem; color: var(--text-muted); line-height: 1.5;">Ensured day-to-day technical execution directly supported the overarching business goals and long-term organizational strategy.</p>
                     </div>
                 </div>
             </div>
