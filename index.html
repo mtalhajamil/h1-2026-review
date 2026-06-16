@@ -35,6 +35,7 @@
             <li><a href="#debugging"><i class="fa-solid fa-bug-slash"></i> Critical Debugging</a></li>
             <li><a href="#migrations"><i class="fa-solid fa-network-wired"></i> Architecture & Migrations</a></li>
             <li><a href="#observability"><i class="fa-solid fa-chart-line"></i> Observability & On-Call</a></li>
+            <li><a href="#okrs-tasks"><i class="fa-solid fa-list-check"></i> Tech OKRs & Ad-hoc</a></li>
             <li><a href="#initiatives"><i class="fa-solid fa-cubes"></i> Delivered Initiatives</a></li>
             <li><a href="#interviews"><i class="fa-solid fa-users"></i> Technical Interviews</a></li>
             <li><a href="#tech-talks"><i class="fa-solid fa-comment-dots"></i> Tech Talks</a></li>
@@ -662,6 +663,82 @@
                     <div class="stat-badge-large">
                         <span class="num text-green">0</span>
                         <span class="lbl">Missed Alerts</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tech OKRs & Out-of-Sprint Tasks -->
+        <section id="okrs-tasks" class="section fade-in">
+            <h2 class="section-title"><i class="fa-solid fa-list-check"></i> Tech OKRs & Out-of-Sprint Tasks</h2>
+            <p class="section-intro">Aligning daily execution with strategic engineering OKRs and maintaining operational resilience through rapid out-of-sprint ad-hoc tasks.</p>
+
+            <div class="glass-panel" style="width: 100%; display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2rem;">
+                <!-- Left Column: Tech OKRs -->
+                <div style="background-color: rgba(13, 17, 23, 0.4); border: 1px solid var(--border-color); padding: 2rem; border-radius: 12px; display: flex; flex-direction: column; gap: 1.5rem;">
+                    <h3 style="font-size: 1.3rem; font-weight: 700; color: var(--accent-cyan); border-bottom: 1px solid var(--border-color); padding-bottom: 0.8rem; display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem;">
+                        <i class="fa-solid fa-crosshairs"></i> Strategic Tech OKRs
+                    </h3>
+
+                    <!-- OKR 1 -->
+                    <div>
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem; flex-wrap: wrap; gap: 0.5rem;">
+                            <strong style="color: var(--text-main); font-size: 1rem;">Consul to DCS Migration</strong>
+                            <span class="badge badge-success" style="padding: 0.15rem 0.5rem; font-size: 0.7rem;">Completed (Dual Run)</span>
+                        </div>
+                        <p style="font-size: 0.88rem; color: var(--text-muted); line-height: 1.5;">Successfully guided the team to migrate legacy HashiCorp Consul key/value properties to Delivery Hero's Dynamic Configuration Service (DCS) ahead of Consul's deprecation, safeguarding system availability.</p>
+                    </div>
+
+                    <!-- OKR 2 -->
+                    <div>
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem; flex-wrap: wrap; gap: 0.5rem;">
+                            <strong style="color: var(--text-main); font-size: 1rem;">Core Monolith Decoupling</strong>
+                            <span class="badge badge-success" style="padding: 0.15rem 0.5rem; font-size: 0.7rem;">Delivered (Cart microservice)</span>
+                        </div>
+                        <p style="font-size: 0.88rem; color: var(--text-muted); line-height: 1.5;">Cleanly extracted the Cart-Order Association from legacy synchronous dependencies and migrated validations to isolated Go consumer threads under `QC-Cart`, eliminating high-latency blocking paths.</p>
+                    </div>
+
+                    <!-- OKR 3 -->
+                    <div>
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem; flex-wrap: wrap; gap: 0.5rem;">
+                            <strong style="color: var(--text-main); font-size: 1rem;">Security Vulnerability SLA Compliance</strong>
+                            <span class="badge badge-success" style="padding: 0.15rem 0.5rem; font-size: 0.7rem;">Completed (QC Invoicing)</span>
+                        </div>
+                        <p style="font-size: 0.88rem; color: var(--text-muted); line-height: 1.5;">Addressed high-severity Go dependency vulnerabilities and container exposures inside local repositories, successfully cleaning the active `QC Invoicing` registry down to SLA thresholds.</p>
+                    </div>
+                </div>
+
+                <!-- Right Column: Out-of-Sprint Tasks -->
+                <div style="background-color: rgba(13, 17, 23, 0.4); border: 1px solid var(--border-color); padding: 2rem; border-radius: 12px; display: flex; flex-direction: column; gap: 1.5rem;">
+                    <h3 style="font-size: 1.3rem; font-weight: 700; color: var(--accent-purple); border-bottom: 1px solid var(--border-color); padding-bottom: 0.8rem; display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem;">
+                        <i class="fa-solid fa-bolt-lightning"></i> Out-of-Sprint Operational Contributions
+                    </h3>
+
+                    <!-- Task 1 -->
+                    <div>
+                        <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.4rem; flex-wrap: wrap;">
+                            <span class="badge badge-error" style="padding: 0.15rem 0.5rem; font-size: 0.65rem;">Emergency Bypass</span>
+                            <strong style="color: var(--text-main); font-size: 0.95rem;">Telephony Incident Mitigation</strong>
+                        </div>
+                        <p style="font-size: 0.88rem; color: var(--text-muted); line-height: 1.5;">Instantly intervened during the Voice Blaster outage, bypassing affected Active/Active routing tables via toggle within minutes to keep vendor confirmation lines online.</p>
+                    </div>
+
+                    <!-- Task 2 -->
+                    <div>
+                        <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.4rem; flex-wrap: wrap;">
+                            <span class="badge badge-warning" style="padding: 0.15rem 0.5rem; font-size: 0.65rem;">Ad-hoc Debugging</span>
+                            <strong style="color: var(--text-main); font-size: 0.95rem;">Experiment Configurations Correction</strong>
+                        </div>
+                        <p style="font-size: 0.88rem; color: var(--text-muted); line-height: 1.5;">Isolated experiment bleed-over within Vendor Support Services (VSS) that was blocking pharmacy vendor lists; provided execution scripts to local operations to restore active region orders immediately.</p>
+                    </div>
+
+                    <!-- Task 3 -->
+                    <div>
+                        <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.4rem; flex-wrap: wrap;">
+                            <span class="badge badge-info" style="padding: 0.15rem 0.5rem; font-size: 0.65rem;">System Tuning</span>
+                            <strong style="color: var(--text-main); font-size: 0.95rem;">Opsgenie Alert Noise Reduction</strong>
+                        </div>
+                        <p style="font-size: 0.88rem; color: var(--text-muted); line-height: 1.5;">Refactored overly sensitive metrics alerting thresholds. Resolved long-standing recurring false positives on dynamic pricing container limits to shield on-call engineers from alert fatigue.</p>
                     </div>
                 </div>
             </div>
